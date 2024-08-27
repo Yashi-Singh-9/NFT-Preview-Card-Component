@@ -32,12 +32,14 @@ Users should be able to:
 
 ### Screenshot
 
-![NFT Preview Card Component](./screenshot.jpg)
+![NFT Preview Card Component Desktop](design/desktop-design.jpg)
+
+![NFT Preview Card Component Desktop](design/mobile-design.jpg)
 
 ### Links
 
-- Solution URL: [GitLab Repository](https://gitlab.com/Yashi-Singh-9/nft-preview-card-component)
-- Live Site URL: [Netlify Deployment](https://nft-preview-card-component-solutions.netlify.app/)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-McKw5hGQQg)
+- Live Site URL: [Live](https://nft-preview-card-component-solutions.netlify.app/)
 
 ## My process
 
