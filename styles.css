@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Primary Colors */ 
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Netural Colors */
+    --very-dark-blue: hsl(217, 54%, 11%);  /* for body */
+    ----very-dark-blue: hsl(216, 50%, 16%);  /* for card */
+    ---very-dark-blue: hsl(215, 32%, 27%); /* horizontal line */
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.container {
+    width: 80%; 
+    max-width: 360px; 
+    margin: 50px auto; 
+    padding: 24px;
+    background-color: var(----very-dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 8px 32px 0px;
+    border-radius: 10px;
+}
+
+.container .image {
+    position: relative;
+    display: flex;
+    top: -10px;
+    cursor: pointer;
+}
+
+.container .image img {
+    width: 380px;
+    height: 310px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    display: block;
+    transition: all 0.3s ease; 
+}
+
+.container .image .overlay {
+    position: absolute;
+    width: 310px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 255, 255, 0.5); 
+    border-radius: 8px;
+    opacity: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease; 
+}
+
+.container .image .overlay .icon {
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.container .image:hover .overlay {
+    opacity: 1; 
+}
+
+.information h3 {
+    color: var(--white);
+    margin: 6px 6px;
+    font-weight: 600;
+    font-size: 22px; 
+}
+
+.information p {
+    color: var(--soft-blue);
+    margin: 20px 5px;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.price,
+.time{
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.price .eth {    color: var(--cyan);    }
+
+.time .clock {    color: var(--soft-blue);   }
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(---very-dark-blue);
+    margin-top: 10px;
+}
+
+.profile {
+    display: flex;
+    margin: 20px 15px;
+    align-items: center;
+}
+
+.profile img {
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile p a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.profile p a:hover,
+.information h3:hover{ 
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+    color: var(--soft-blue);
+
+}
+
+.attribution a { 
+    color: var(--white);
+    font-style: italic;
+    text-decoration: none; 
+    letter-spacing: 1px;
+}
+
+.attribution a:hover{    color: var(--cyan);    }
+
+@media (max-width: 600px) {
+    .container {        padding: 16px;    }
+
+    .container .image img {        
+        border-radius: 15px;
+        width: 95%;
+    }
+
+    .information h3 {        font-size: 20px;    }
+
+    .information p {        font-size: 16px;    }
+
+    .price, .time {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .profile img {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+    }
+
+    .profile p a {        font-size: 14px;    }
+}
+
+@media (max-width: 400px) {
+    .container {        padding: 12px;    }
+
+    .container .image img {
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .information{ margin-left: 10px;  }
+
+    .information h3 {        font-size: 22px;    }
+
+    .price, .time {        font-size: 14px;    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile p a {        font-size: 14px;    }
+}
+
+@media (max-width: 320px) {
+    .container{        padding: 0;    }
+
+    .container .image img{  width: 85%;    }
+
+    .information {        margin: -15px 20px;    }
+}
