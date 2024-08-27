@@ -17,6 +17,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+- [Style Guide](#style-guide)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -68,6 +69,10 @@ In future projects, I aim to:
 
 - [CSS Tricks: Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Helpful for understanding Flexbox layout.
 - [MDN Web Docs: CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) - A guide to CSS transitions used in hover effects.
+
+## Style Guide
+
+For the style guidance please refer [Style Guide File](style-guide.md)
 
 ## Author
 
