@@ -5,7 +5,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ## Badges
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9078564d-0b97-4ba5-8b02-d28e7ebbb115/deploy-status)](https://app.netlify.com/sites/nft-preview-card-component-solutions/deploys)
-![GitHub last commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/NFT-Preview-Card-Component)
+[![Last Commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/NFT-Preview-Card-Component?style=for-the-badge&cacheSeconds=60&randomString=20240925)](https://github.com/Yashi-Singh-9/NFT-Preview-Card-Component)
 
 ## Table of contents
 
