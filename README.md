@@ -5,6 +5,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ## Badges
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9078564d-0b97-4ba5-8b02-d28e7ebbb115/deploy-status)](https://app.netlify.com/sites/nft-preview-card-component-solutions/deploys)
+![GitHub last commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/NFT-Preview-Card-Component)
 
 ## Table of contents
 
@@ -38,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-McKw5hGQQg)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-LB9QF0SezT)
 - Live Site URL: [Live](https://nft-preview-card-component-solutions.netlify.app/)
 
 ## My process
@@ -79,7 +80,7 @@ For the style guidance please refer [Style Guide File](style-guide.md)
 ## Author
 
 - LinkedIn - [Yashi Singh](https://www.linkedin.com/in/yashi-singh-b4143a246)
-- Frontend Mentor - [@Yashi-Singh-1](https://www.frontendmentor.io/profile/Yashi-Singh-1)
+- Frontend Mentor - [@Yashi-Singh-9](https://www.frontendmentor.io/profile/Yashi-Singh-9)
 
 ## Acknowledgments
 
