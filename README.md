@@ -4,8 +4,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Badges
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9078564d-0b97-4ba5-8b02-d28e7ebbb115/deploy-status)](https://app.netlify.com/sites/nft-preview-card-component-solutions/deploys)
-[![Last Commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/NFT-Preview-Card-Component?style=for-the-badge&cacheSeconds=60&randomString=20240925)](https://github.com/Yashi-Singh-9/NFT-Preview-Card-Component)
+[![Last Commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/NFT-Preview-Card-Component?style=for-the-badge&cacheSeconds=60&randomString=20240925)](https://github.com/Yashi-Singh-9/NFT-Preview-Card-Component)  
 
 ## Table of contents
 
@@ -18,6 +17,9 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+- [Installation](#installation)
+  - [Installing SCSS](#installing-scss)
+  - [Running SCSS](#running-scss)
 - [Style Guide](#style-guide)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -33,9 +35,13 @@ Users should be able to:
 
 ### Screenshot
 
-![NFT Preview Card Component Desktop](design/desktop-design.jpg)
+**Desktop Design**
 
-![NFT Preview Card Component Desktop](design/mobile-design.jpg)
+![NFT Preview Card Component Desktop](design/desktop-design.png)
+
+**Mobile Design**
+
+<img src="design/mobile-design.png" height="750">
 
 ### Links
 
@@ -48,6 +54,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SCSS (Sassy CSS) for styling
 - Flexbox
 - Mobile-first design
 - [Google Fonts](https://fonts.google.com/) - For typography
@@ -59,6 +66,7 @@ During this project, I focused on creating a responsive NFT card component. Key 
 - Implementing hover effects with CSS transitions.
 - Utilizing Flexbox for layout and alignment.
 - Ensuring responsiveness with media queries.
+- Structuring SCSS files for better maintainability.
 
 ### Continued development
 
@@ -72,6 +80,45 @@ In future projects, I aim to:
 
 - [CSS Tricks: Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Helpful for understanding Flexbox layout.
 - [MDN Web Docs: CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) - A guide to CSS transitions used in hover effects.
+- [Sass Documentation](https://sass-lang.com/documentation) - Official Sass documentation for SCSS.
+
+## Installation
+
+### Installing SCSS
+
+To get started with SCSS, ensure you have Node.js installed on your system. Then, follow these steps:
+
+1. Install the Sass preprocessor using npm:
+   ```bash
+   npm install -g sass
+   ```
+
+2. Verify the installation:
+   ```bash
+   sass --version
+   ```
+
+### Running SCSS
+
+To compile SCSS files into CSS, use the following command:
+
+1. Navigate to the project directory:
+   ```bash
+   cd nft-preview-card-component
+   ```
+
+2. Run the SCSS compiler to watch for changes:
+   ```bash
+   sass --watch scss:css
+   ```
+   This command compiles all `.scss` files in the `scss` folder into the `css` folder and watches for changes.
+
+3. Link the generated CSS file in your HTML:
+   ```html
+   <link rel="stylesheet" href="css/styles.css">
+   ```
+
+Now, you’re ready to start styling with SCSS!
 
 ## Style Guide
 

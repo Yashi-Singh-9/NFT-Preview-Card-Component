@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$very-dark-blue: hsl(217, 54%, 11%);
+$very-dark-blue-card: hsl(216, 50%, 16%);  
+$very-dark-blue-horizontal: hsl(215, 32%, 27%); 
+$white: hsl(0, 0%, 100%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.18rem;
+    background-color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+    }
+}
+
+main{
+    .container{
+        max-width: 460px; 
+        width: 100%;
+        margin: 50px auto 10px auto;
+        padding: 1.8rem;
+        background-color: $very-dark-blue-card;
+        border-radius: 0.8rem;
+
+        @media (max-width: 490px) {
+            width: 90%;
+        }
+
+        .image{
+            position: relative;
+            display: flex;
+            top: -10px;
+            cursor: pointer;
+
+            img {
+                max-width: 440px;
+                width: 100%;
+                object-fit: cover;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 1.5rem;
+                display: block;
+                transition: all 0.3s ease; 
+            }
+
+            .overlay {
+                position: absolute;
+                max-width: 380px;
+                width: 100%;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                background-color: rgba(0, 255, 255, 0.5); 
+                border-radius: 0.8rem;
+                opacity: 0; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: opacity 0.3s ease; 
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    transition: opacity 0.3s ease;
+                    cursor: pointer;
+                }
+            }
+
+            &:hover {
+                .overlay {
+                  opacity: 1; 
+                }
+            }
+        }
+
+        .information{
+            padding: 0.6rem;
+
+            h3{
+                color: $white;
+                cursor: pointer;
+                margin-bottom: 1rem;
+                font-size: 1.59rem;
+                transition: 0.3s ease;
+                font-weight: 600;
+
+                &:hover{
+                    color: $cyan;
+                }
+            }
+
+            p{
+                color: $soft-blue;
+                font-weight: 400;                
+                font-size: 1.39rem;
+                margin-bottom: 0.9rem;
+                line-height: 1.5;
+
+                @media (max-width: 490px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .parent{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+
+                @media (max-width: 369px) {
+                    flex-direction: column;
+                    align-items: baseline;
+                }
+
+                .price,
+                .time{
+                    margin: 20px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    gap: 10px;
+                    font-weight: 600;
+                }
+
+                .price{
+                    .eth{
+                        color: $cyan;
+                    }
+                }
+
+                .time{
+                    .clock{
+                        color: $soft-blue;
+                    }
+                }
+            }
+
+            hr{
+                border: none;
+                height: 0.2rem;
+                background-color: $very-dark-blue-horizontal;
+                margin-top: 10px;
+            }
+
+            .profile{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 40px;
+                    margin-right: 1rem;
+                    border: 2px solid $white;
+                    border-radius: 50%;
+                }
+                
+                .name{
+                    margin-bottom: 0;
+                    font-size: 1.2rem;
+
+                    @media (max-width: 490px) {
+                        font-size: 1rem;
+                    }
+
+                    a,
+                    a:visited{
+                        text-decoration: none;
+                        color: $white;
+                        transition: 0.3s ease;
+
+                        &:hover{
+                            color: $cyan;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    font-size: 0.95rem;
+    color: $white;
+
+    a,
+    a:visited{
+        color: $cyan;
+        text-decoration: none;
+    }
+}
