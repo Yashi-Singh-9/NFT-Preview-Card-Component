@@ -46,7 +46,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-LB9QF0SezT)
-- Live Site URL: [Live](https://nft-preview-card-component-solutions.netlify.app/)
+- Live Site URL: [Live](https://yashi-singh-9.github.io/NFT-Preview-Card-Component/)
 
 ## My process
 
